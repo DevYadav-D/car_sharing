@@ -1,0 +1,6 @@
+  1 git status
+   2 git add .
+   3 git commit -m "scaffolding for project"
+   4 git push
+   5 git checkout -b CS-001_header
+   6 git push -u origin CS-001_header
