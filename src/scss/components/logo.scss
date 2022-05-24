@@ -1,0 +1,27 @@
+@import "../utils/functions.scss";
+
+.logo{
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    padding-top: rem(10px);
+    padding-bottom: rem(10px);
+
+    &__img{
+        height: rem(35px);
+        width: rem(31px);
+        margin-right: rem(10px);
+    }
+
+    &__text{
+        color: white;
+        letter-spacing: 0;
+        font-size: rem(35px);
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    &__text--highlights{
+        color: red;
+    }
+}
