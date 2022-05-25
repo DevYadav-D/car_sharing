@@ -1,0 +1,30 @@
+@use "sass:math";
+@import "../config.scss";
+@import "functions.scss";
+
+@mixin text( $size:$rem(base-font-size), $color:$primary-text-color, $family:'sans-serif'){
+    color:$color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: normal;
+}
+
+@mixin btn($padding-h, $padding-v, $font-size, $bg:$primary-color, $color: white){
+    
+    // @debug "padding-h: #{$padding-h}, font size: #{$font-size}";
+    
+    $height: px(2* $padding-h + $font-size);
+
+    background-color: $bg;
+    border:0;
+    border-radius: rem(math.div($height, 2));
+    color: $color;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: $font-size;
+    padding: $padding-h $padding-v;
+    cursor:pointer;
+    // margin: rem(10px);
+    text-decoration: none;
+    display: inline-block;
+}

@@ -1,8 +1,14 @@
 @import "normalize";
 
 @import "common";
+
+@import "layout/layout.scss";
+
 @import "components/header.scss";
 @import "components/intro.scss";
 
 @import "components/logo.scss";
 @import "components/nav.scss";
+
+@import "components/blog.scss";
+
