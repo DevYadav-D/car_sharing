@@ -2,14 +2,14 @@
 @import "../config.scss";
 @import "functions.scss";
 
-@mixin text( $size:$rem(base-font-size), $color:$primary-text-color, $family:'sans-serif'){
+@mixin text( $size:$rem(base-font-size), $color:$primary-text-color, $family:sans-serif){
     color:$color;
     font-family: $family;
     font-size: $size;
     font-weight: normal;
 }
 
-@mixin btn($padding-h, $padding-v, $font-size, $bg:$primary-color, $color: white){
+@mixin btn($padding-h, $padding-v, $font-size, $bg:$primary-color, $color: $secondary-text-color){
     
     // @debug "padding-h: #{$padding-h}, font size: #{$font-size}";
     
